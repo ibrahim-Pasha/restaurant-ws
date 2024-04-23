@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Core;
+namespace NLayer.Core.DTOs;
 
-public class Table:BaseEntity
+public class TableDto : BaseDto
 {
     public int TableNumber { get; set; }
-    public Place Place { get; set; }
+
 }

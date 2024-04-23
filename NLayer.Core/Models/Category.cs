@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Core;
+namespace NLayer.Core.Models;
 
-public class Place:BaseEntity
+public class Category : BaseEntity
 {
     public string Name { get; set; }
-    public int TableId { get; set; }
-    public ICollection<Table> Tables { get; set; }
+    public ICollection<Product> Products { get; set; }
 }
